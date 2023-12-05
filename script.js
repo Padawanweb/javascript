@@ -275,19 +275,112 @@
     // let btDecrescer = document.getElementById("btDecrescer");
     // btDecrescer.addEventListener("click", numeros);
 
-    let npessoas;
-    let maiorpeso = 0;
-    let totalpessoas;
-    let maiorcem;
-    let media;
+    // let npessoas;
+    // let maiorpeso = 0;
+    // let totalpessoas;
+    // let maiorcem;
+    // let media;
 
 
-    for(let i = 1; i<=8 ; i++){
-        let peso = Number(prompt('Digite o seu peso'));
+    // for(let i = 1; i<=8 ; i++){
+    //     let peso = Number(prompt('Digite o seu peso'));
 
-        if(peso > maiorpeso){
-            maiorpeso = peso
-        }
+    //     if(peso > maiorpeso){
+    //         maiorpeso = peso
+    //     }
     
-    }
-    alert("f" + maiorpeso)
+    // }
+    // alert("" + maiorpeso)
+
+    // let salario;
+    // let filhos;
+    // let medias;
+    // let mediaf;
+    // let somasal=0;
+    // let somaf=0;
+
+    //     for(let i = 1; i<=10 ; i++){
+    //         salario = Number(prompt('Digite o seu salário'));
+    //         filhos = Number(prompt('Digite quantos filhos'));
+
+    //     somasal += salario
+    //     somaf += filhos
+        
+    //     // mediaf = filhos / 10;
+    //     }
+    //     medias = somasal / 2
+    //     mediaf = somaf / 2
+    //     alert('Sua média de salário é: ' + medias + ' Sua média de filhos é: ' + mediaf)
+
+    // let somav = 0
+    // let somasp = 0
+    // let somarj = 0
+    // let somaaci = 0
+
+
+
+
+    //     for(let i = 1; i<=3; i++){
+    //         let vei = prompt('Seu veiculo é de passeio digite S para sim e N para não ?');
+    //         let est = prompt('Você é de RJ ou SP?');
+    //         let aci = prompt('Você sofreu acidente digite S para sim e N para não');
+
+
+    //         if(vei =='S'){
+    //             somav++
+    //         }
+    //         if(est =='SP'){
+    //             somasp++
+    //         }else if(est =='RJ'){
+    //             somarj++
+    //         }
+    //         if(aci =='S'){
+    //             somaaci++
+    //         }
+    //     }
+    //         alert ('Veiculos de passeio: ' + somav + "\nCarros de SP: " + somasp +"\nCarros do RJ: " + somarj + "\nNúmeros de Acidentes: " + somaaci)
+        
+    // let somal = 0
+    // let somab = 0
+    // let somac = 0
+    // let somat = 0
+    // let soman = 0
+    // let somab = 0
+
+        let soma1=0;
+        let soma2=0;
+        let soma3=0;
+        let soma4=0;
+        let soma5=0;
+        let soma6=0;
+
+        // if(numero ==0 || isNaN(numero)){
+        //             alert("Informe um número");
+        //             inNumero.focus();
+        //             inNumero.value = ""
+        //             return;
+        //         }
+
+        for(let i = 1; i<=10; i++){
+            let candidatos = Number(prompt("Digite o nome do seu candidato:\n" + "13 - Lula" + "\n22 - Bolsonaro" + "\n12 - Ciro " + "\n69 - Tiririca" + "\n5 - Votos Nulo" + "\n0 -Votos Brancos"))
+
+            if(candidatos == 13){
+                soma1++
+            } else if(candidatos ==22){
+                soma2++
+            } else if (candidatos ==12){
+                soma3++
+            } else if (candidatos ==69){
+                soma4++
+            } else if (candidatos ==5){
+                soma5++
+            } else if(candidatos ==0){
+                soma6++
+            } else{
+                alert(prompt("Informe um número válido!"))
+                i = i -1
+            }
+
+        }
+            alert("Lula: " + soma1 + "\nBolsonaro: " + soma2 + "\nCiro: " + soma3 + "\nTiririca: " + soma4 + "\nVoto Nulo: " + soma5 + "\nVoto Branco: " + soma6 )
+
